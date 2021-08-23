@@ -1,0 +1,26 @@
+[
+    {
+      "essential": true,
+      "image": "${docker_image_url}",
+      "memory": ${memory},
+      "memoryReservation": 500,
+      "name": "${container_name}",
+      "portMappings": [
+        {
+          "containerPort": ${container_port},
+          "hostPort": ${container_port}
+        }
+      ],
+      "environment" : [
+        { "name": "AWS_REGION", "value": "${aws_region}" }
+      ],
+      "healthCheck": {
+        "command": [ "CMD-SHELL", "${health_check}" ],
+        "retries": 3,
+        "timeout": 2,
+        "interval": 5,
+        "startPeriod": 5
+      }
+    }
+  ]
+  
