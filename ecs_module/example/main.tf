@@ -7,7 +7,7 @@ module "ecs_container"{
     container_name = "wordpress"
     docker_image_name = "wordpress:latest"
     container_port = 80
-    Service_Name = "Webapp"
+    service_name = "Webapp"
     region = "mumbai"
     container_template_path = "container_config.json"
 }

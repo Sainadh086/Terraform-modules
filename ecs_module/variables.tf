@@ -7,7 +7,7 @@ variable "container_name" {
 
 variable "docker_image_name" {
   type = string
-  description = "Docker image name"
+  description = "Docker image name use the complete format example docker.io/jhon123/myapp:latest, quay.io/jhon123/myapp:v2"
 }
 
 variable "container_port" {
@@ -26,7 +26,7 @@ variable "cpu" {
   default = 256
 }
 
-variable "Service_Name" {
+variable "service_name" {
     type = string
     description = "Name of the service"
 }

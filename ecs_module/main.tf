@@ -45,7 +45,7 @@ resource "aws_ecs_task_definition" "default" {
 
 resource "aws_ecs_service" "default" {
     
-    name = var.Service_Name
+    name = var.service_name
     cluster = aws_ecs_cluster.default.arn
     task_definition = aws_ecs_task_definition.default.arn
     launch_type = "FARGATE"

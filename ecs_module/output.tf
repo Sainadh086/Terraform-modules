@@ -2,6 +2,6 @@ output "ContainerService" {
   value = "Container Service Created Successfully"
 }
 
-output "Seployed" {
+output "Deployed" {
   value = var.container_name
 }
