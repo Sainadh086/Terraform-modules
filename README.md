@@ -17,3 +17,5 @@ Here I will upload the modules which helps to improve the workflow and to reduce
 
 
 Feel free to use the modules in your own projects, share your feedback for fine tuning and improve the modules.
+
+Adding EKS module soon
